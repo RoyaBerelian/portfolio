@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'my-font';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(.../fonts/Roboto-Medium.ttf) format('');
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
