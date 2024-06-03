@@ -6,6 +6,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/fontello-icon/css/fontello.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        
+        /* .swiper {
+        width: 100%;
+        height: 100%;
+        }
+
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        } */
+    </style>
 </head>
 <body>
     <main class="w-full font-font overflow-x-hidden">
@@ -91,7 +117,7 @@
                         </div>
                     </article>
                     <div >
-                        <div class="flex flex-wrap *:flex *:justify-center *:items-center *:w-[150px] *:h-[150px] *:ml-4 *:my-4 pt-[50px]">
+                        <div class=" bg-slate-500 flex flex-wrap pt-[50px] *:ml-4 *:my-4 *:flex *:justify-center *:items-center *:w-1/4 *:h-[150px] *:md:w-1/5 *:lg::1/6 ">
                             <!-- css3 -->
                             <div>
                                 <div class="w-[100px] h-[100px] *:justify-center *:items-center">
@@ -172,9 +198,21 @@
                             </p>
                         </div>
                     </article>
-                    <div>
-                        <!-- ***slider with js**** -->
+                    <!-- ***slider with js**** -->
+                    
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper *:flex *:justify-center *:items-center">
+                            <div><img class="block object-cover w-full h-full" src="image/project-1.jpg" alt=""></div>
+                            <div><img class="block object-cover w-full h-full" src="image/project-2.jpg" alt=""></div>
+                            <div><img class="block object-cover w-full h-full" src="image/project-3.jpg" alt=""></div>
+                            <div><img class="block object-cover w-full h-full" src="image/project-4.jpg" alt=""></div>
+                            <div><img class="block object-cover w-full h-full" src="image/project-5.jpg" alt=""></div>
+                            
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
+                
                 </div>
             </section>
             <!-- **************footer*************** -->
@@ -217,4 +255,12 @@
         </div> 
     </main>
 </body>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
 </html>
