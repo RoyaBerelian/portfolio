@@ -6,7 +6,7 @@
 
 - [Demo Project](https://royaberelian.github.io/portfolio/)
 
-- Developed by Roya berelian
+- Developed by Roya Berelian
 
 - Created - 2024-5-31
 
